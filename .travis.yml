@@ -1,4 +1,3 @@
-sudo: false
 language: node_js
 node_js:
 - '14'
@@ -13,5 +12,6 @@ before_install:
 install:
 - npm install
 script:
+- sudo npm install -g grunt-cli
 - npm test
 - npm run coveralls

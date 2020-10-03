@@ -21,7 +21,8 @@
     "scripts": {
         "test": "jest",
         "grunt": "grunt",
-        "coveralls": "jest --coverage && cat ./tests/results/lcov.info | coveralls"
+        "coveralls": "jest --coverage && cat ./tests/results/lcov.info | coveralls",
+        "grunt-coveralls": "grunt-coveralls"
     },
     "author": "Matthew Shields",
     "license": "ISC",

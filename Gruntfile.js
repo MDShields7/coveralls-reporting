@@ -32,6 +32,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-coveralls');
   
     grunt.registerTask('default', ['jshint']);
-    grunt.registerTask('coveralls');
+    grunt.registerTask('grunt-coveralls', ['coveralls']);
   
   };
