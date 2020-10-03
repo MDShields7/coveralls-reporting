@@ -1,0 +1,15 @@
+/*jshint esversion: 6 */
+const { add, multiply } = require('../src/math');
+
+test('adds 1 + 2 to equal 12', () => {
+    expect(add(10, 2)).toBe(12);
+});
+test('adds 0 + -6 to equal -6', () => {
+    expect(add(0, -6)).toBe(-6);
+});
+test('multiplies 2 * 5 to equal 10', () => {
+    expect(multiply(2, 5)).toBe(10);
+});
+test('multiplies 4 * 13 to equal 64 (fails)', () => {
+    expect(multiply(4, 13)).toBe(64);
+});

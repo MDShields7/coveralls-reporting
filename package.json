@@ -1,0 +1,19 @@
+{
+    "name": "coveralls-reporting",
+    "description": "Testing coverage reporting through coveralls.io",
+    "jest": {
+        "verbose": true
+    },
+    "scripts": {
+        "test": "jest",
+        "grunt": "grunt"
+    },
+    "author": "Matthew Shields",
+    "license": "ISC",
+    "devDependencies": {
+        "grunt": "^1.3.0",
+        "grunt-contrib-jshint": "^2.1.0",
+        "grunt-contrib-uglify": "^5.0.0",
+        "grunt-contrib-watch": "^1.1.0"
+    }
+}
