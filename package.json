@@ -2,18 +2,36 @@
     "name": "coveralls-reporting",
     "description": "Testing coverage reporting through coveralls.io",
     "jest": {
-        "verbose": true
+        "verbose": true,
+        "collectCoverage": true,
+        "coverageDirectory": "./test/results",
+        "coverageReporters": [
+            "json",
+            "lcov",
+            "text"
+        ],
+        "collectCoverageFrom": [
+            "**/*.{js,jsx}",
+            "!**/node_modules/**",
+            "!**/test/**",
+            "!**/vendor/**",
+            "!**Gruntfile.js**"
+        ]
     },
     "scripts": {
         "test": "jest",
-        "grunt": "grunt"
+        "grunt": "grunt",
+        "coveralls": "jest --coverage && cat ./tests/results/lcov.info | coveralls"
     },
     "author": "Matthew Shields",
     "license": "ISC",
     "devDependencies": {
+        "coveralls": "^3.1.0",
         "grunt": "^1.3.0",
         "grunt-contrib-jshint": "^2.1.0",
         "grunt-contrib-uglify": "^5.0.0",
-        "grunt-contrib-watch": "^1.1.0"
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-coveralls": "^2.0.0",
+        "jest": "^26.4.2"
     }
 }

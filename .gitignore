@@ -7,6 +7,7 @@ jest.config.js
 
 # testing
 /coverage
+/test
 jest.config.js
 
 # production
