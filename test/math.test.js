@@ -10,6 +10,6 @@ test('adds 0 + -6 to equal -6', () => {
 test('multiplies 2 * 5 to equal 10', () => {
     expect(multiply(2, 5)).toBe(10);
 });
-test('multiplies 4 * 13 to equal 64 (fails)', () => {
-    expect(multiply(4, 13)).toBe(64);
+test('multiplies 4 * 13 to equal 52 (fails)', () => {
+    expect(multiply(4, 13)).toBe(52);
 });
