@@ -1,4 +1,7 @@
-## Coveralls
+# Coveralls
+
+![Language](https://img.shields.io/badge/language-typescript%20100%25-yellow.svg)
+[![Coverage Status](https://coveralls.io/repos/github/MDShields7/coveralls-reporting/badge.svg?branch=master)](https://coveralls.io/github/MDShields7/coveralls-reporting?branch=master)
 
 ### Jest Testing
 + Create an account at [coveralls.io](https://coveralls.io).
