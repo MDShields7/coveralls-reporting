@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-const { add, multiply } = require('../src/math');
+const { add, multiply, subtract, divide } = require('../src/math');
 
 test('adds 1 + 2 to equal 12', () => {
     expect(add(10, 2)).toBe(12);

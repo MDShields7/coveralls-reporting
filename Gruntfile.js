@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         },
         your_target: {
           // LCOV coverage file (can be string, glob or array)
-          src: './test/results/lcov.info',
+          src: './coverage/lcov.info',
           options: {
             // Any options for just this target
           }
