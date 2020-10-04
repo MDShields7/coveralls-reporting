@@ -13,3 +13,9 @@ test('multiplies 2 * 5 to equal 10', () => {
 test('multiplies 4 * 13 to equal 52 (fails)', () => {
     expect(multiply(4, 13)).toBe(52);
 });
+test('subtracts 4 + 3 to equal 1', () => {
+    expect(subtract(4,3)).toBe(1);
+});
+test('divides 10 + 2 to equal 5', () => {
+    expect(divide(10,2)).toBe(5);
+});

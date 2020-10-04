@@ -15,3 +15,4 @@ script:
 - npm install -g grunt-cli
 - npm test
 - npm coveralls
+- npm coveralls-v2

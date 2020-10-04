@@ -21,8 +21,8 @@
     "scripts": {
         "test": "jest",
         "grunt": "grunt",
-        "coveralls": "jest --coverage && cat ./test/results/lcov.info | coveralls",
-        "coveralls-json": "jest --coverage && cat ./test/results/coverage-final.json",
+        "coveralls": "NODE_ENV=test jest --coverage && cat ./coverage/lcov.info | coveralls",
+        "coveralls-v2": " NODE_ENV=test jest --coverage && coveralls < coverage/lcov.info",
         "grunt-coveralls": "grunt-coveralls"
     },
     "author": "Matthew Shields",
