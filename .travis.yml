@@ -12,6 +12,6 @@ before_install:
 install:
 - npm install
 script:
-- sudo npm install -g grunt-cli
+- npm install -g grunt-cli
 - npm test
-- npm run coveralls
+- npm coveralls
