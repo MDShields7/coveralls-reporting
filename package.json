@@ -17,13 +17,8 @@
         ]
     },
     "scripts": {
-        "make-dirs": "mkdir coverage && cd coverage && touch lcov.info && cd ..",
-        "del-dirs": "rm -R coverage",
         "test": "NODE_ENV=test jest --coverage && cat coverage/lcov.info | coveralls",
-        "jshint": "grunt",
-        "coveralls": "NODE_ENV=test jest --coverage && cat ./coverage/lcov.info | coveralls",
-        "coveralls-v2": " NODE_ENV=test jest --coverage && coveralls < coverage/lcov.info",
-        "grunt-coveralls": "grunt coveralls"
+        "jshint": "grunt"
     },
     "author": "Matthew Shields",
     "license": "ISC",
