@@ -6,8 +6,7 @@
         "collectCoverage": true,
         "coverageDirectory": "./coverage",
         "coverageReporters": [
-            "json",
-            "text"
+            "lcov"
         ],
         "collectCoverageFrom": [
             "**/*.{js,jsx}",
@@ -18,6 +17,8 @@
         ]
     },
     "scripts": {
+        "make-dirs": "mkdir coverage && cd coverage && touch lcov.info && cd ..",
+        "del-dirs": "rm -R coverage",
         "test": "NODE_ENV=test jest --coverage && cat coverage/lcov.info",
         "jshint": "grunt",
         "coveralls": "NODE_ENV=test jest --coverage && cat ./coverage/lcov.info | coveralls",
