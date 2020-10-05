@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         },
         your_target: {
           // LCOV coverage file (can be string, glob or array)
-          src: './coverage/lcov.info',
+          src: 'coverage/lcov.info',
           options: {
             // Any options for just this target
           }
@@ -27,11 +27,7 @@ module.exports = function(grunt) {
       }
     });
   
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-coveralls');
-  
+    grunt.loadNpmTasks('grunt-coveralls', ['grunt-coveralls']);
     grunt.registerTask('default', ['jshint']);
-    grunt.registerTask('grunt-coveralls', ['coveralls']);
   
   };

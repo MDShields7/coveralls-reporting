@@ -6,19 +6,19 @@
         "collectCoverage": true,
         "coverageDirectory": "./coverage",
         "coverageReporters": [
-            "lcov"
+            "lcov",
+            "text"
         ],
         "collectCoverageFrom": [
             "**/*.{js,jsx}",
             "!**/node_modules/**",
-            "!**/test/**",
+            "!**/coverage/**",
             "!**/vendor/**",
             "!**Gruntfile.js**"
         ]
     },
     "scripts": {
-        "test": "NODE_ENV=test jest --coverage && cat coverage/lcov.info | coveralls",
-        "jshint": "grunt"
+        "test": "NODE_ENV=test jest --coverage && cat coverage/lcov.info | coveralls --verbose"
     },
     "author": "Matthew Shields",
     "license": "ISC",
@@ -26,6 +26,5 @@
         "coveralls": "^3.1.0",
         "jest": "^26.4.2"
     },
-    "dependencies": {
-    }
+    "dependencies": {}
 }

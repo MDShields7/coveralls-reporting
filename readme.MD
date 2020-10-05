@@ -12,7 +12,7 @@
 + I have not gotten coveralls to report, I receive error: `Bad response: 422 {"message":"Couldn't find a repository matching this job.","error":true}`.<br>
 ### TravisCI
 + I have used Travis CI in order to get the reporting done. Travis will take a github repository code push and build and test your code and send reporting.
-+ Create an account at [travis-ci.com.io](https://travis-ci.com).
++ Create an account at [travis-ci.com](https://travis-ci.com).
 + Connect to your github account and allow access to your repos. Other repos can be used with some variation.
 + Create a `.travis.yml` file, making sure to include a section for the the npm test script.
 + Make sure your github is authorized (just once the first time) before a push. Pushes before your authorization will not be built by Travis CI.
