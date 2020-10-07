@@ -1,9 +1,11 @@
 language: node_js
 node_js:
 - '14'
+# safelist
 branches:
   only:
   - master
+  - dev
 cache:
   directories:
   - node_modules
