@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-const { add, multiply, subtract, divide } = require('../src/math');
+const { add, multiply, subtract, divide, toThePowerOf } = require('../src/math');
 
 test('adds 1 + 2 to equal 12', () => {
     expect(add(10, 2)).toBe(12);
@@ -18,4 +18,10 @@ test('subtracts 4 + 3 to equal 1', () => {
 });
 test('divides 10 + 2 to equal 5', () => {
     expect(divide(10,2)).toBe(5);
+});
+test('toThePowerOf 3 ** 2 to equal 9', () => {
+    expect(toThePowerOf(3,2)).toBe(9);
+});
+test('toThePowerOf 4 ** 3 to equal 64', () => {
+    expect(toThePowerOf(4,3)).toBe(64);
 });
